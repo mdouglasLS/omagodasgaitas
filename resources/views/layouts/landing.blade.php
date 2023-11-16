@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="shortcut icon" href="{{url('storage/images/favicon/favicon.ico')}}" type="image/x-icon">
+    <title>{{ config('app.name', '') }}</title>
+    <link rel="shortcut icon" href="{{asset('storage/images/favicon/favicon.ico')}}" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -15,22 +15,16 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/light-mode.js'])
 </head>
-<body class="font-sans antialiased min-h-screen bg-gray-100 dark:bg-zinc-950">
-@include('layouts.navigation')
+<body class="font-sans antialiased bg-gray-100 dark:bg-zinc-950">
+<div class="min-h-screen">
+    <!-- Page Heading -->
+    <x-header></x-header>
 
-<!-- Page Heading -->
-@if (isset($header))
-    <header class="bg-white dark:bg-gray-800 shadow">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            {{ $header }}
-        </div>
-    </header>
-@endif
-
-<!-- Page Content -->
-<main>
-    {{ $slot }}
-</main>
+    <!-- Page Content -->
+    <main>
+        {{ $slot }}
+    </main>
+</div>
 
 <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
