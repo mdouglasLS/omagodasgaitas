@@ -1,3 +1,27 @@
 <x-landing-layout>
-    <div class="mx-2 mt-5 shadow-sm p-0.5 rounded bg-white">Home</div>
+    <x-section>
+        <x-carousel></x-carousel>
+    </x-section>
+    <x-section>
+        <div class="mb-60">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, beatae distinctio ducimus eligendi error ex illo ipsum itaque iure odit perferendis quam quos sit totam velit. Blanditiis itaque tempora voluptate.
+        </div>
+        <div class="mb-60">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, beatae distinctio ducimus eligendi error ex illo ipsum itaque iure odit perferendis quam quos sit totam velit. Blanditiis itaque tempora voluptate.
+        </div>
+        <div class="mb-60">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, beatae distinctio ducimus eligendi error ex illo ipsum itaque iure odit perferendis quam quos sit totam velit. Blanditiis itaque tempora voluptate.
+        </div>
+    </x-section>
+    <x-section>
+        <div class="mb-60">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, beatae distinctio ducimus eligendi error ex illo ipsum itaque iure odit perferendis quam quos sit totam velit. Blanditiis itaque tempora voluptate.
+        </div>
+        <div class="mb-60">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, beatae distinctio ducimus eligendi error ex illo ipsum itaque iure odit perferendis quam quos sit totam velit. Blanditiis itaque tempora voluptate.
+        </div>
+        <div class="mb-60">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, beatae distinctio ducimus eligendi error ex illo ipsum itaque iure odit perferendis quam quos sit totam velit. Blanditiis itaque tempora voluptate.
+        </div>
+    </x-section>
 </x-landing-layout>

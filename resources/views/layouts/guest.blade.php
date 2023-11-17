@@ -15,9 +15,9 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans text-gray-900 antialiased">
-<main class="min-h-screen flex flex-col justify-center items-center bg-gray-100 dark:bg-zinc-950">
-    <div class="mt-6 px-6 py-4 bg-white dark:bg-neutral-900 shadow dark:shadow-zinc-900 overflow-hidden rounded-md">
+<body class="font-sans text-gray-900 antialiased bg-gray-100 dark:bg-zinc-950">
+<main class="min-h-screen flex flex-col justify-center items-center px-3 sm:px-0">
+    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-neutral-900 shadow dark:shadow-zinc-900 overflow-hidden rounded-md">
         <div class="mb-5">
             <a href="{{ route('home') }}" class="flex justify-center">
                 <x-logo class="w-20 fill-current text-gray-500"/>
