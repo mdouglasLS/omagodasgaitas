@@ -21,9 +21,11 @@
     <x-header></x-header>
 
     <!-- Page Content -->
-    <main>
+    <main class="px-4">
         {{ $slot }}
     </main>
+
+    <x-footer :socialMedia="$socialMedia"></x-footer>
 </div>
 
 <script>
