@@ -21,7 +21,7 @@
     <x-header></x-header>
 
     <!-- Page Content -->
-    <main class="px-4">
+    <main class="">
         {{ $slot }}
     </main>
 

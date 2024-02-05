@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $banner = \App\Models\Banner::class;
+    return view('home', ['banners' => $banner::where('is_active', true)->orderBy('order','asc')->get()]);
 })->name('home');
 
 Route::get('/dashboard', function () {
