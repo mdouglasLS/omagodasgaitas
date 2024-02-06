@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,10 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $banner = \App\Models\Banner::class;
-    return view('home', ['banners' => $banner::where('is_active', true)->orderBy('order','asc')->get()]);
-})->name('home');
+Route::get('/', LandingController::class)->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
