@@ -8,8 +8,10 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
-let elms = document.getElementsByClassName( 'slider' );
 
-for (let i = 0; i < elms.length; i++ ) {
-    new Splide( elms[ i ]).mount();
+// slider banner
+let banner = document.getElementsByClassName( 'slider' );
+
+for (let i = 0; i < banner.length; i++ ) {
+    new Splide( banner[ i ]).mount();
 }

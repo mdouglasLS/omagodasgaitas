@@ -6,9 +6,10 @@ use Illuminate\View\View;
 
 class LandingController extends Controller
 {
-    public function __invoke(BannerController $bannerController): View
+    public function __invoke(BannerController $bannerController, ServiceCatalogController $serviceCatalogController): View
     {
         $banners = $bannerController->getBannersToHome();
-        return view('home', compact('banners'));
+        $services = $serviceCatalogController->getServices();
+        return view('home', compact('banners', 'services'));
     }
 }
