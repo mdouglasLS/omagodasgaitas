@@ -1,12 +1,13 @@
 @props(['cards'])
 
-<div class="splide slider rounded"
+<div class="splide slider rounded m-0"
      aria-labelledby="carousel-heading"
      id="splide-container"
-     data-splide='{"type":"loop","autoplay":true,"height": "40vh","cover":true, "focus": 0, "perPage": 4,
+     data-splide='{"type":"loop","autoplay":true,"height": "45vh","cover":true, "focus": 0, "perPage": 4,
                  "breakpoints": {
                     "576": {
-                        "perPage": 1
+                        "perPage": 1,
+                        "height": "60vh"
                     },
                     "768": {
                         "perPage": 3
@@ -18,13 +19,13 @@
                         "perPage": 4
                     }
                  }}'>
-    <div class="splide__track h-[25rem]">
+    <div class="splide__track">
         <ul class="splide__list">
             @foreach($cards as $card)
                 <li class="splide__slide" data-splide-interval="3000">
                     <div class="splide__slide__container flex justify-center">
-                        <div class="max-w-[16rem] sm:max-w[14rem] md:max-w-[16rem] sm:mx-1 md:mx-0 border border-gray-200 rounded-md shadow-sm dark:shadow-neutral-700 dark:bg-neutral-800 dark:border-gray-800">
-                            <a href="#">
+                        <div class="border border-gray-200 rounded-md shadow-sm dark:shadow-neutral-700 dark:bg-neutral-800 dark:border-gray-800">
+                            <a href="https://google.com" target="_blank">
                                 <img class="rounded-t-md" src="{{ $card->thumbnail_url }}" alt="" />
                             </a>
                             <div class="p-2">

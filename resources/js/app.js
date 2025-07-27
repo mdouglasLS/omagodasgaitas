@@ -8,10 +8,16 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
-
 // slider banner
 let banner = document.getElementsByClassName( 'slider' );
 
-for (let i = 0; i < banner.length; i++ ) {
-    new Splide( banner[ i ]).mount();
-}
+document.addEventListener('DOMContentLoaded', () => {
+
+    for (let i = 0; i < banner.length; i++) {
+        new Splide(banner[i], {
+            arrows: false,
+            gap: 20,
+            lazyLoad: true,
+        }).mount();
+    }
+})

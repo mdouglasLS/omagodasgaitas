@@ -1,5 +1,5 @@
 <header class="sticky top-0 z-50">
-    <nav class="bg-white border-gray-200 dark:bg-neutral-900 shadow-md shadow-gray-200 dark:shadow-sm dark:shadow-neutral-800">
+    <nav class="bg-white border-gray-200 dark:bg-neutral-900 shadow-sm shadow-gray-200 dark:shadow-sm dark:shadow-neutral-800">
         <div class="max-w-screen-xl mx-auto p-2 md:pt-4 grid grid-cols-6 items-center">
             <div class="col-span-1 md:col-span-2">
                 <a href="{{ route('home') }}" class="flex items-center">

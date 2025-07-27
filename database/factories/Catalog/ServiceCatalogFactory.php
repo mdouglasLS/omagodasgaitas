@@ -1,11 +1,11 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Catalog;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\ServiceCatalog>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Catalog\ServiceCatalog>
  */
 class ServiceCatalogFactory extends Factory
 {

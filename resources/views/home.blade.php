@@ -1,14 +1,21 @@
 <x-landing-layout>
+    <x-slider :banners="$banners"></x-slider>
     <x-section>
-        <x-slider :banners="$banners"></x-slider>
+        <x-slot:title>
+            Oficina Especializada Em Manutenção E Consertos
+        </x-slot:title>
+        <x-slider-card :cards="$services"></x-slider-card>
     </x-section>
     <x-section>
-        <div>
-            <h1 class="text-center text-2xl font-bold my-4">Oficina Especializada Em Manutenção E Consertos</h1>
-            <x-slider-card :cards="$services"></x-slider-card>
-        </div>
+        <x-slot:title>
+            Acessórios E Microfones
+        </x-slot:title>
+        <x-slider-card :cards="$services"></x-slider-card>
     </x-section>
     <x-section>
-        <h1 class="mb-60 text-center text-2xl font-bold py-60">Acessórios e microfones</h1>
+        <x-slot:title>
+            Acessórios E Microfones
+        </x-slot:title>
+        <x-slider-card :cards="$services"></x-slider-card>
     </x-section>
 </x-landing-layout>

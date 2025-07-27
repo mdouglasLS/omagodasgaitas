@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Catalog;
 
-use App\Models\ServiceCatalog;
+use App\Http\Controllers\Controller;
+use App\Models\Catalog\ServiceCatalog;
 use Illuminate\Database\Eloquent\Collection;
 
 class ServiceCatalogController extends Controller
